@@ -118,3 +118,19 @@ Pick any dataset(s) off of here for the challenge. https://github.com/caesar0301
 
 How do you verify if data has been properly converted in a stream like XML to json?
 
+How do you normalize and verify fields of nested data? 
+How do you verify output?
+http://www.priorityhealth.com/provider/manual/office-mgmt/data-exchange/hl7/hl7-samples
+http://help.interfaceware.com/kb/285/3#athena
+http://help.interfaceware.com/kb/285/3#labekg
+
+Please be as specific as possible in your strategy document.  Include expected timelines and deliverables if possible.  This document should demonstrate:
+Your ability to recognize the most important QA tasks in a project
+Your ability to prioritize and organize an overwhelming amount of work
+Your ability to research, evaluate, and recommend appropriate tools
+Your ability to learn and understand new technologies in order to do a job
+
+Your strategy should clearly explain the following:
+What needs to be done today
+What Testing strategies need to be built in cooperation with the developers
+What tools and code bases are required to succeed
