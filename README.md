@@ -32,7 +32,7 @@ What needs to be done in the next 3 months
 What still needs to be done after that
 
 The following applications use the Rotten Tomatoes API to perform a common set of functions across multiple platforms.
- 
+
 
 Android App
 Rotten Tomatoes
@@ -118,7 +118,7 @@ Pick any dataset(s) off of here for the challenge. https://github.com/caesar0301
 
 How do you verify if data has been properly converted in a stream like XML to json?
 
-How do you normalize and verify fields of nested data? 
+How do you normalize and verify fields of nested data?
 How do you verify output?
 http://www.priorityhealth.com/provider/manual/office-mgmt/data-exchange/hl7/hl7-samples
 http://help.interfaceware.com/kb/285/3#athena
@@ -134,3 +134,23 @@ Your strategy should clearly explain the following:
 What needs to be done today
 What Testing strategies need to be built in cooperation with the developers
 What tools and code bases are required to succeed
+
+## Challenge 3
+
+Using the Selenium test framework, create a test framework for an application that will meet the following requirements:
+* The framework should use the page object model
+* The framework should be simple to understand, and easy to modify/update
+* The framework should appropriately handle waiting and other timing issues
+* Please document any assumptions you are making about how to find elements of the application
+* Demonstrate the usage of your framework by writing at least 3 end-to-end tests using the framework
+* Be prepared to explain the details of your framework and answer any questions we may have about it
+
+### Bonus Points
+* Create a library or suite of tools that can be used to debug failing tests
+* Demonstrate how your framework can be used to write tests that run concurrently
+* Make your framework capable of testing an application across multiple platforms (Android and iOS)
+
+### The Application
+Please design your framework to test an application based on one of the following designs:
+- https://github.com/Hart-Challenge/iOS_Code_Challenge
+- https://github.com/Hart-Challenge/codechallenge_android
