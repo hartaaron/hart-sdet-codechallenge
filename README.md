@@ -16,6 +16,9 @@ Using the Selenium test framework, create a test framework for an application th
 * Create a library or suite of tools that can be used to debug failing tests
 * Demonstrate how your framework can be used to write tests that run concurrently
 * Make your framework capable of testing an application across multiple platforms (Android and iOS)
+* Write your framework in such a way that it can test internationalization or localization of the app
+* Write your framework such that it can be used for load or performance testing the app
+
 
 ### The Application
 Please design your framework to test an application based on one of the following designs:
