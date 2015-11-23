@@ -29,10 +29,10 @@ Please design your framework to test an application based on one of the followin
 
 Establish a method of ensuring correct processing of data in Apache Spark and Kafka based framework.
 
-The Goal of this framework shoul be an automation framework that achieves the following:
+The Goal of this framework should be an automation framework that achieves the following:
 
 Establish Environment Readiness on Deployment
-Verify Data is existing and displaying / pollable correctly
+Verify Data is existing and displaying / poll-able correctly
 
 Pick any dataset(s) off of here for the challenge. https://github.com/caesar0301/awesome-public-datasets
 
