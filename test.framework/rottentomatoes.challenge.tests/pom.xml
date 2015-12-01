@@ -2,16 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>test.framework</artifactId>
+        <groupId>com.hart</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hart</groupId>
-    <artifactId>test.framework</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>rottentomatoeschallenge.automation</module>
-        <module>rottentomatoes.challenge.tests</module>
-    </modules>
+    <artifactId>rottentomatoes.challenge.tests</artifactId>
 
 
 </project>
