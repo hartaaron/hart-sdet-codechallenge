@@ -20,7 +20,7 @@ public class RottenTomatoesChallenge_Tests {
     HashMap<String, String> expected;
 
     static {
-        System.setProperty("webdriver.chrome.driver=/home/aaron/")
+        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
     }
     public RottenTomatoesChallenge_Tests(HashMap<String, String> expectedResults) {
         this.expected = expectedResults;
