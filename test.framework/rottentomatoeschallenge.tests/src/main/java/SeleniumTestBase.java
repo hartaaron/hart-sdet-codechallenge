@@ -56,13 +56,4 @@ public class SeleniumTestBase {
         }
     }
 
-    //TODO: get expected results from external data source
-    @Parameterized.Parameters
-    public static Iterable data() {
-        HashMap<String, String> expectedValues = new HashMap<>();
-        ArrayList<HashMap<String, String>> expectedResults = new ArrayList<>();
-        expectedResults.add(expectedValues);
-
-        return expectedResults;
-    }
 }
