@@ -6,7 +6,7 @@ import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import rottentomateschallenge.automation.AutomationException;
 import rottentomateschallenge.automation.Browser;
-import rottentomateschallenge.automation.RottenTomatoesDriver;
+import rottentomateschallenge.automation.PropertyLoader;
 import rottentomateschallenge.automation.WebDriverFactory;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.Properties;
 
 
 @RunWith(Parameterized.class)
-public class SeleniumTestBase {
+public class WebdriverTestBase {
 
     protected static Properties properties;
     protected static String propertiesFile = "/test.properties";
@@ -24,14 +24,14 @@ public class SeleniumTestBase {
 
     WebDriver driver;
 
-    public SeleniumTestBase(HashMap<String, String> expectedResults) {
+    public WebdriverTestBase(HashMap<String, String> expectedResults) {
         this.expected = expectedResults;
     }
 
     @BeforeClass
     public static void initialize() {
         try {
-            properties = RottenTomatoesDriver.PropertyLoader.LoadProperties(propertiesFile);
+            properties = PropertyLoader.LoadProperties(propertiesFile);
         } catch (Exception e) {
             System.out.println();
             System.out.println("******************************************************");
@@ -56,4 +56,13 @@ public class SeleniumTestBase {
         }
     }
 
+    //TODO: get expected results from external data source
+    @Parameterized.Parameters
+    public static Iterable data() {
+        HashMap<String, String> expectedValues = new HashMap<>();
+        ArrayList<HashMap<String, String>> expectedResults = new ArrayList<>();
+        expectedResults.add(expectedValues);
+
+        return expectedResults;
+    }
 }

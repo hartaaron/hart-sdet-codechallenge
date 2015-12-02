@@ -1,7 +1,7 @@
-
 import org.junit.Test;
 import org.junit.runners.Parameterized.Parameters;
-import rottentomateschallenge.automation.RottenTomatoesDriver;
+import rottentomateschallenge.automation.AutomationException;
+import rottentomateschallenge.automation.pages.SearchPage;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,18 +9,16 @@ import java.util.HashMap;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class RottenTomatoesChallenge_Tests extends SeleniumTestBase {
+public class Search_Tests extends RottenTomatoesAppTestBase {
 
-    RottenTomatoesDriver app;
-
-    public RottenTomatoesChallenge_Tests(HashMap<String, String> expectedResults) {
+    public Search_Tests(HashMap<String, String> expectedResults) {
         super(expectedResults);
     }
 
     @Test
-    public void it_should_display_the_app_title() {
-        app.start();
-        assertThat(app.getTitle()).isEqualTo(expected.get("title"));
+    public void search_page_should_display_the_app_title() throws AutomationException {
+        SearchPage search = (SearchPage) app.search.navigateTo();
+        assertThat(search.getTitle()).isEqualTo(expected.get("title"));
     }
 
     //TODO: get expected results from external data source
