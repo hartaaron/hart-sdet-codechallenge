@@ -19,7 +19,7 @@ public class MovieDetailsPage extends WebDriverPage {
 
     @Override
     public void initializeElements() {
-        movieTitle = By.id("title");
+        MovieTitle = By.id("title");
     }
 
 
