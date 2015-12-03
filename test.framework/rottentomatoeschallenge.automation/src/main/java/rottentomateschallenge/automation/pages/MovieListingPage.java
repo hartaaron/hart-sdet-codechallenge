@@ -35,6 +35,12 @@ public class MovieListingPage extends WebDriverPage {
         return null;
     }
 
+    public MovieDetailsPage selectMovie(String title) {
+        WebElement movie = findMovieByTitle(title);
+        movie.click();
+        return new MovieDetailsPage(driver);
+    }
+
     @Override
     public void initializeElements() {
         movies = By.cssSelector("div.movie");
