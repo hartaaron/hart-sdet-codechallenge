@@ -15,13 +15,13 @@ public class Search_Tests extends RottenTomatoesAppTestBase {
     }
 
     @Test
-    public void search_page_should_display_the_app_title() throws AutomationException {
+    public void should_display_the_app_title() throws AutomationException {
         app.search.navigateTo();
         assertThat(app.search.getTitle()).isEqualTo(expected.get("app-title"));
     }
 
     @Test
-    public void should_handle_no_results() throws AutomationException {
+    public void should_handle_no_search_results() throws AutomationException {
         app.search.navigateTo();
         app.search.searchFor(expected.get("nonexistent-movie"));
 
@@ -41,5 +41,4 @@ public class Search_Tests extends RottenTomatoesAppTestBase {
 
         return expectedResults;
     }
-
 }

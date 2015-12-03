@@ -16,4 +16,11 @@ public class MovieDetailsPage extends WebDriverPage {
     public MovieDetailsPage(WebDriver driver) {
         super(driver);
     }
+
+    @Override
+    public void initializeElements() {
+        movieTitle = By.id("title");
+    }
+
+
 }
