@@ -1,7 +1,9 @@
 package rottentomateschallenge.automation.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import rottentomateschallenge.automation.AutomationException;
@@ -41,6 +43,9 @@ public abstract class WebDriverPage<T> {
     public String getTitle() {
         return driver.getTitle();
     }
+
+    public String getText(WebElement e) { return e.getText(); }
+    public String getText() { return getText(driver.findElement(By.tagName("body"))); }
 
 
     public WebDriverPage<T> navigateTo() throws AutomationException {

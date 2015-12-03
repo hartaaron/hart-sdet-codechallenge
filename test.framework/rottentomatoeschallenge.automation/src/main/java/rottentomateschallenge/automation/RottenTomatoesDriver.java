@@ -2,7 +2,7 @@ package rottentomateschallenge.automation;
 
 import org.openqa.selenium.WebDriver;
 import rottentomateschallenge.automation.pages.MovieDetailsPage;
-import rottentomateschallenge.automation.pages.MovieListPage;
+import rottentomateschallenge.automation.pages.MovieListingPage;
 import rottentomateschallenge.automation.pages.SearchPage;
 
 public class RottenTomatoesDriver {
@@ -13,18 +13,17 @@ public class RottenTomatoesDriver {
     }
 
     public SearchPage search;
-    public MovieListPage movieList;
+    public MovieListingPage movieListing;
     public MovieDetailsPage movieDetails;
-
 
     public void start() {
         initialisePageObjects();
     }
 
-
     private void initialisePageObjects(){
         search = new SearchPage(driver);
-        movieList = new MovieListPage(driver);
+        movieListing = new MovieListingPage(driver);
         movieDetails = new MovieDetailsPage(driver);
     }
+
 }

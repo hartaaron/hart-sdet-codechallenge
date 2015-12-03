@@ -4,19 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class MovieListPage extends WebDriverPage {
+import java.util.List;
+
+public class MovieListingPage extends WebDriverPage {
     int MAX_MOVIES=10;
-    public MovieListPage(WebDriver driver) {
+    public MovieListingPage(WebDriver driver) {
         super(driver);
     }
 
-    public By movie;
+    public By movies;
     public By movieImage;
     public By movieTitle;
     public By viewDetailsLink;
 
+    public List<WebElement> getMovieList() { return driver.findElements(movies); }
+
     public WebElement getMovieByIndex(int index) {
-        return driver.findElements(movie).get(index);
+        return getMovieList().get(index);
     }
 
     public WebElement findMovieByTitle(String title) {
@@ -31,9 +35,8 @@ public class MovieListPage extends WebDriverPage {
         return null;
     }
 
-
     @Override
     public void initializeElements() {
-        movie = By.cssSelector("div.movie");
+        movies = By.cssSelector("div.movie");
     }
 }
