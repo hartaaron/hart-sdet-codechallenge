@@ -54,3 +54,14 @@ Your strategy should clearly explain the following:
 What needs to be done today
 What Testing strategies need to be built in cooperation with the developers
 What tools and code bases are required to succeed
+
+## Challenge 3
+
+Design an automated testing strategy for the product defined here:
+https://github.com/Hart-Challenge/codechallenge_java_mq
+
+The automation strategy should include the following:
+* A plan for how the product can be tested without connecting to production servers
+* Details of how the functionality of the product would be tested and validated
+* Code demonstrating how the product will be tested
+* At least three sample tests using the above code
