@@ -48,4 +48,4 @@ Bonus:
 
 Notes:
 
-Feel free to use the internet or other reference material (but not people) to complete the challenge.  Ask for clarification or if you get stumped.  This is expected to be difficult
+Feel free to use the internet or other reference material (but not people) to complete the challenge.  Ask for clarification or if you get stumped.  This is expected to be difficult and it is ok if you don't complete everything.  Focus on what you can deliver within the time frame.
