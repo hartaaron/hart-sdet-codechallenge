@@ -4,8 +4,9 @@ As a tourist, I want to know whether I should go to Disneyland (in Anaheim, Cali
 
 I like both resorts equally, and they're about the same distance from my home (plus I have a teleporter ray, so travel is nearly instantaneous.) So, the deciding factor for me is which place has the best weather.
 
-In order to plan my trip, I want to check the current weather in each location using my favorite weather app, Weather Underground (http://wunderground.com), 
-so that I can maximize my enjoyment.  I will make my decision based on that.
+In order to plan my trip, I want to check the current weather in each location so that I can maximize my enjoyment while waiting in line.
+
+I will check the weather using my favorite weather app, Weather Underground (http://wunderground.com), and make my decision based on that.
 
 
 *** 
