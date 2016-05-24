@@ -12,7 +12,7 @@ I will check the weather using my favorite weather app, Weather Underground (htt
 *** 
 
 
-Your job is to create a test that will check the weather in both locations using either the Weather Underground web site or mobile app.  
+Your job is to create tests that will check the weather in both locations using either the Weather Underground web site or mobile app.  
 
 Use whatever programming languages, test frameworks, automation tools, libraries, etc. you want and need to get the job done. 
 
