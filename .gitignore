@@ -1,3 +1,6 @@
+# Test results & settings
+testrun.properties 
+
 # Intellij
 .idea/
 *.iml
@@ -5,8 +8,8 @@
 # Eclipse
 .project
 .settings/
+.classpath
 local.properties
-
 
 # Maven
 target/

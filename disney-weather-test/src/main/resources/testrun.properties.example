@@ -1,0 +1,3 @@
+baseUrl=http://wunderground.com
+browser=firefox
+timeout=30000
