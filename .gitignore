@@ -1,6 +1,27 @@
-.idea
+# Intellij
+.idea/
 *.iml
 
+# Eclipse
+.project
+.settings/
+local.properties
+
+
+# Maven
+target/
+
+# Gradle
 .gradle
-build
+build/
+gradle/wrapper/gradle-wrapper.properties
+
+# Misc
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.log
+*.swp
 
