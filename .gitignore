@@ -18,6 +18,7 @@ target/
 .gradle
 build/
 gradle/wrapper/gradle-wrapper.properties
+gradle
 
 # Misc
 .metadata
