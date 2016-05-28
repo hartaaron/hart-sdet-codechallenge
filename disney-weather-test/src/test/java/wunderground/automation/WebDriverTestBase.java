@@ -30,7 +30,7 @@ public class WebDriverTestBase {
 			String projectRoot = System.getProperty("user.dir");
 			String propertiesFilePath = projectRoot + "/build/resources/test/testrun.properties";
 			InputStream stream = new FileInputStream(propertiesFilePath);
-			
+
 			settings.load(stream);
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import wunderground.automation.pages.*;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class WundergroundDriver {
@@ -13,6 +12,9 @@ public class WundergroundDriver {
 
 	WebDriver driver;
 	HashMap<String, WundergroundPage> pages;
+
+	HomePage home;
+	ForecastPage forecast;
 
 	public WundergroundDriver (WebDriver driver) {
 		this.driver = driver;
@@ -39,8 +41,18 @@ public class WundergroundDriver {
 		return page;
 	}
 
+
+	public ForecastPage search(String location) throws Exception {
+		open(HomePage.class);
+		home.search(location);
+		return forecast;
+	}
+
 	private void initializePages() {
+		home = new HomePage(driver);
+		forecast = new ForecastPage(driver);
+
 		pages = new HashMap<String, WundergroundPage>();
-		pages.put(HomePage.class.getSimpleName(), new HomePage(driver));
+		pages.put(home.getClass().getSimpleName(), home);
 	}
 }
