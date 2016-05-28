@@ -9,6 +9,10 @@ repositories {
     mavenCentral()
 }
 
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
 dependencies {
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.53.0'

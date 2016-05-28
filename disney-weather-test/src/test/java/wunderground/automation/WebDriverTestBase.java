@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 public class WebDriverTestBase {
 	static protected Logger log;
@@ -25,7 +27,11 @@ public class WebDriverTestBase {
 
 	static protected void initialiseSettings() {
 		try {
-			settings.load(new FileInputStream("/testrun.properties"));
+			String projectRoot = System.getProperty("user.dir");
+			String propertiesFilePath = projectRoot + "/build/resources/test/testrun.properties";
+			InputStream stream = new FileInputStream(propertiesFilePath);
+			
+			settings.load(stream);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

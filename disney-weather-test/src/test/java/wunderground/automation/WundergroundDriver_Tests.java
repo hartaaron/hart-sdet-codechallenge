@@ -3,8 +3,6 @@ package wunderground.automation;
 import org.junit.Test;
 import wunderground.automation.pages.*;
 
-import java.io.FileNotFoundException;
-
 import static org.assertj.core.api.Assertions.*;
 
 public class WundergroundDriver_Tests extends WebDriverTestBase {
