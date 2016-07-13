@@ -34,13 +34,13 @@ Use whatever programming languages, test frameworks, automation tools, libraries
 
 Bonus:
 
-1. Use BDD to describe your tests.
+* Use BDD to describe your tests.
 
-2. Build automation in such a way that it can be expanded to use either the mobile app or the web site.  Alternately use the Weather Underground API to check the weather without using the UI.
+* Build automation in such a way that it can be expanded to use either the mobile app or the web site.  Alternately use the Weather Underground API to check the weather without using the UI.
 
-3. Extend your tests to be able to check the weather in any two given locations.  Make the test harness data driven.
+* Extend your tests to be able to check the weather in any two given locations.  Make the test harness data driven.
 
-4. Write your tests in a way that they could also easily be used to test a hypothetical app developed specifically to do what is described (without using Weather Underground directly.)
+* Write your tests in a way that they could also easily be used to test a hypothetical app developed specifically to do what is described (without using Weather Underground directly.)
 
 
 ***
