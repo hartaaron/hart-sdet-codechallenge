@@ -50,14 +50,4 @@ Notes:
 
 Feel free to use the internet or other reference material (but not people) to complete the challenge.  Ask for clarification or if you get stumped.  This is expected to be difficult and it is ok if you don't complete everything.  Focus on what you can deliver within the time frame.
 
-Setup:
-1. pip install ddt
-2. pip install requests
-3. Ensure that python 2.7 is your defaault, to check this type python in a terminal and watch for: Python 2.7.x.
-4. If you do not have python installed goto https://www.python.org/ftp/python/2.7.12/python-2.7.12-macosx10.6.pkg.
-5. If you have 3.x python then you will need to check out the following instructions http://stackoverflow.com/questions/5846167/how-to-change-default-python-version to swtich over to 2.7.
-
-How to Run:
-1. Inside the folder hart-sdet-codechallenge, cd hart-sdet-codechallenge.
-2.  python -m unittest discover ./test/ Test_ParkDecider.py 
 
